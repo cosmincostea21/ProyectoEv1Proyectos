@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="estilos/estilosform.css">
+    <link rel="icon" href="images/bmw_icono.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h1>Formulario para recibir ofertas</h1>
+    </header>
+    <main>
+        <form action="bmw.php" method="post">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <p>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" maxlength="30" required>
+                </p>
+
+
+
+                <p>
+                    <label for="apellidos">Apellidos: </label>
+                    <input type="text" id="apellidos" maxlength="50">
+                </p>
+
+                <p>
+                    <label for="numero">Edad: </label>
+                    <input type="number" name="numero" id="numero" value="18" min="18" max="99">
+                </p>
+
+                <p>
+                    <label for="dni">DNI: </label>
+                    <input type="text" id="dni" placeholder="Dni Nie" required>
+                </p>
+
+                <p>
+                    <label for="email">Dirección email:</label>
+                    <input type="email" name="email" id="email">
+                </p>
+
+                <p>
+                    <label for="propaganda">Desea recibir propaganda a domicilio: </label>
+                    <input id="propaganda" type="checkbox" checked>
+                </p>
+
+                <p>
+                    <label for="seleccionar">Selecciona modelo preferido: </label>
+                    <select name="seleccionar" id="seleccionar">
+                        <option value="BMW series M">serie M</option>
+                        <option value="BMW series i">serie I</option>
+                        <option value="BMW series Z">serie Z</option>
+
+                    </select>
+                </p>
+
+                <p>
+                    <label for="motivo">Es usted cliente: </label>
+                    Si
+                    <input type="radio" name="cliente" id="motivo" value="T">
+                    No
+                    <input type="radio" name="cliente" id="motivo" value="O">
+                </p>
+            </fieldset>
+            <p id="botones">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Reiniciar">
+            </p>
+        </form>
+
+        <p id="volver">
+            <a href="index.html">Volver a la página principal.</a>
+        </p>
+    </main>
+    <footer>
+        <img id="footerimg" src="images/footer.jpg" alt="footer">
+    </footer>
+
+
+</body>
+
+</html>
